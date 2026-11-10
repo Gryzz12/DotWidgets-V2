@@ -128,6 +128,7 @@ object Renderer {
                 }
             }
             Kind.BUTTONS -> drawButtons(ctx, c, box, d, st, plan)
+            Kind.MUSIC -> Unit
             Kind.FULL -> {
                 val mh = (box.h * 0.22f).coerceIn(68 * d, 112 * d)
                 if (box.h - mh - gap > 120 * d) {
